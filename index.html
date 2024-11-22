@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/Assignment/instagram/instagram-logo.png">
+    <title>Instagram</title>
+    <style>
+    .screen img
+    {
+    height:87vh;
+    width: 35%;
+    position:relative;
+    top: 10%;
+    left: 15%;
+
+    }
+    .screen1 img 
+    {
+        height:67vh;    
+        width: 20%;
+        position: absolute;
+        top: 10%;
+        left: 26%;
+    }
+    .right{
+        position: absolute;
+        top:10%;
+        right:20%;
+    }
+    fieldset{
+        width:26%;
+    position: relative;
+        top:10%;
+        left:75%;
+    }
+    .right fieldset img{
+        width:25%;
+        align-self: right;
+    }
+.right fieldset label{
+    top: 20%;
+    left: 75%;
+   
+}
+.right fieldset input{
+    top: 20%;
+    left: 75%;
+width: 210px;
+height:7vh;
+margin-bottom: 5px;
+}
+.placeholder
+{
+    position: relative;
+}
+.placeholder input{
+    background-color: rgb(219, 235, 240);
+}
+.placeholder::after
+{
+    position: absolute;
+    left: 5px;
+    top: 1px;
+    content: attr(data-placeholder);
+    pointer-events: none;
+    opacity: 0.6;
+    font-size: 12px;
+}
+.placeholder1
+{
+    position: relative;
+    display: inline-block;
+}
+
+.placeholder1::after
+{
+    position: absolute;
+    left: 5px;
+    top: 1px;
+    content: attr(data-placeholder1);
+    pointer-events: none;
+    opacity: 0.6;
+    font-size: 12px;
+}
+
+.placeholder1 input{
+  background-color: rgb(219, 235, 240);
+  border: 2px solid black;
+}
+
+.placeholder1 button {
+  margin-left: -25%;
+  border: none;
+  background-color: transparent;
+}
+.buttonlog button{
+    width: 218px;
+    background-color: rgb(65, 65, 241);
+    color: white;
+}
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.separator::before,
+.separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #000;
+}
+
+.separator:not(:empty)::before {
+  margin-right: .25em;
+}
+
+.separator:not(:empty)::after {
+  margin-left: .25em;
+}
+.facebook img{
+    size: 2%;
+    width: 2px;
+    height: 15px;
+
+}
+.facebook p {
+    font-size: 10px;
+    align-items: center;
+display: inline-block;
+text-align: center;
+}
+.App{
+    text-align:right;
+padding-right: 30px;
+}
+.googleplay{
+    padding-right: 15px;
+    
+}
+.appstore{
+    padding-right: 5px;
+}
+.copyright{
+    display: flex;
+    align-content: center;
+    align-items: center;
+padding-left: 400px;
+font-size: 12px;
+font-style: normal;
+font-family: Arial, Helvetica, sans-serif;
+color: #585656;
+}
+.About{
+    color: #585656;  
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="screen" align="left">
+    <img src="/Assignment/instagram/screen.png" alt="">
+    <div class="screen1">
+        <img src="/Assignment/instagram/frontscreen.jpg" alt="" >
+    </div>
+</div>
+<div class="right">
+    <fieldset>
+       <center> <img src="/Assignment/instagram/instagram.png" alt=""> </center><br>
+        <div class="placeholder" data-placeholder="Phone number username or email address">
+            <input value="8137049621" />
+        </div>
+        <div class="placeholder1" data-placeholder1="Password">
+            <input  type="password" value="344546546545"   />  <button>Show</button>  
+        </div>
+<div class="buttonlog"><button>log In</button></div>
+
+<div class="separator">OR</div>
+<div class="facebook">
+    <center>
+<img src="/Assignment/instagram/facebook.png" alt=""> <p>Log in with facebook.</p> <br>
+
+<p>forgotten your password?</p></center>
+</div>
+    </fieldset>
+    <fieldset>
+        
+            <p class="account">Don't have an account? <font color="blue">Sign up</font></p>
+        
+    </fieldset>
+    <p class="App">Get the App.</p>
+   <img src="/Assignment/instagram/googleplay.png" alt="" width="10%"  align="right" class="googleplay">
+   <img src="/Assignment/instagram/appstore.png" alt="" width="10%" align="right" class="appstore">
+   
+</div>
+
+   <p align="center"> <font color="#585656" >About    Blog     Jobs        API     Privacy     Terms       Top accounts        Hashtags        Locations       Instagram Lite</font><p>
+
+   <p align="center"> <font color="#585656" > Beauty      Dance       Fitness     food & Drink      Home & Garden     Music   Visual arts</font>   </p>
+
+   <div align="center" class="copyright">
+   <select name=" select" id="">
+    <option value="English(UK)" selected>English(UK)</option>
+</select>
+<p><pre >     &#xA9;2021 Instagram from Facebook</pre></p>
+</div>
+
+</nav>
+
+</body>
+</html>
